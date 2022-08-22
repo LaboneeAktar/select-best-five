@@ -22,13 +22,15 @@ function setElementValue(elementId, value) {
 
 //Calculation of player expenses
 function calculatePlayerExpenses() {
+    const selectedNumber = getTextElementValueById('selected-number');
+
     const perPlayerAmount = getInputFieldValueById('player-amount-field');
     const playerExpensesValue = getTextElementValueById('player-expenses');
     if (isNaN(perPlayerAmount)) {
         alert('Please Insert a Number');
     }
     else {
-        const playerExpenses = perPlayerAmount * 5;
+        const playerExpenses = perPlayerAmount * selectedNumber;
         setElementValue('player-expenses', playerExpenses);
         return playerExpenses;
     }
