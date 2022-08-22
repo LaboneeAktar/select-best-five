@@ -26,6 +26,8 @@ function calculatePlayerExpenses() {
 
     const perPlayerAmount = getInputFieldValueById('player-amount-field');
     const playerExpensesValue = getTextElementValueById('player-expenses');
+
+    //Error Handling
     if (isNaN(perPlayerAmount)) {
         alert('Please Insert a Number');
     }
@@ -50,7 +52,14 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const managerAmount = getInputFieldValueById('manager-field');
     const coachAmount = getInputFieldValueById('coach-field');
 
-    const calculateTotal = getTextElementValueById('calculate-total');
-    const calculateTotalCost = playerExpenses + managerAmount + coachAmount;
-    setElementValue('calculate-total', calculateTotalCost)
+    //Error Handling
+    if (isNaN(managerAmount) || isNaN(coachAmount)) {
+        alert('Please Insert a Number');
+    }
+    else {
+        const calculateTotal = getTextElementValueById('calculate-total');
+        const calculateTotalCost = playerExpenses + managerAmount + coachAmount;
+        setElementValue('calculate-total', calculateTotalCost);
+    }
+
 })
