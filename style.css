@@ -1,7 +1,21 @@
 h1 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Berkshire Swash', cursive;
 }
 
 p {
     font-family: 'Bree Serif', serif;
 }
+
+.banner-image {
+    margin-left: -75px;
+}
+
+.banner-title {
+    font-size: 50px;
+    color: crimson;
+}
+
+/* .banner-image-ball {
+    margin-right: -39px;
+    margin-top: 260px;
+} */
