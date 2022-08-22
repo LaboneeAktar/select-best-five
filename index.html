@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link  -->
+    <script src="https://kit.fontawesome.com/0a3ed02156.js" crossorigin="anonymous"></script>
     <!-- Style Sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -42,7 +44,7 @@
         </section>
     </header>
     <!-- Start Main Part -->
-    <main class="bg-dark">
+    <main class="bg-dark pb-5">
         <section class="container pt-5">
             <div class="row">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -86,7 +88,7 @@
         </section>
         <section class="container">
             <div class="row pb-4">
-                <div class="col-9">
+                <div class="col-lg-9 col-12">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-1">
                         <div class="col">
                             <div class="card text-center rounded-2 shadow">
@@ -153,23 +155,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-12">
                     <div class="col pt-4">
                         <div class="p-3 border bg-black text-white border-0">
                             <h4 class="text-center">Budget</h4>
                             <span class="d-flex flex-row justify-content-between align-items-center pt-3">
                                 <p class="pt-3 text-start">Per Player :</p>
-                                <input class="m-2 border-white bg-black text-white py-2 w-50" type="text">
+                                <input class="m-2 border-white bg-black text-white py-2 w-50" type="text"
+                                    placeholder="Enter Amount">
                             </span>
                             <button class="btn btn-primary px-5 mt-3 ms-4">Calculate</button>
                             <p class="mt-4 fs-5">Player Expenses : <span class="ms-2">$00</span></p>
                             <span class="d-flex flex-row justify-content-between align-items-center pt-3">
                                 <p class="pt-3">Manager :</p>
-                                <input class="m-2 border-white bg-black text-white py-2 w-50" type="text">
+                                <input class="m-2 border-white bg-black text-white py-2 w-50" type="text"
+                                    placeholder="Enter Amount">
                             </span>
                             <span class="d-flex flex-row justify-content-between align-items-center pt-3">
                                 <p class="pt-3">Coach :</p>
-                                <input class="m-2 border-white bg-black text-white py-2 w-50" type="text">
+                                <input class="m-2 border-white bg-black text-white py-2 w-50" type="text"
+                                    placeholder="Enter Amount">
                             </span>
                             <button class="btn btn-primary px-5 mt-3 ms-4">Calculate Total</button>
                             <p class="mt-4 fs-5">Total : <span class="ms-5 text-danger text-end">$00</span></p>
@@ -179,9 +184,25 @@
             </div>
         </section>
     </main>
-
-
-
+    <!-- Main part End  -->
+    <!-- Footer -->
+    <footer>
+        <div class="bg-black text-light pt-5">
+            <div>
+                <h1 class="text-center pt-5 text-danger">Play Football</h1>
+                <p class="text-center">
+                    Privacy Ploicy | Terms of use</p>
+            </div>
+            <p class="text-center">Social Media Links</p>
+            <div class="text-white d-flex justify-content-center align-items-center pb-1">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook text-white px-2 fs-4"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube text-white px-2 fs-4"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram text-white px-2 fs-4"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter text-white px-3 fs-4"></i></a>
+            </div>
+            <p class="text-white-50 text-center pt-5 pb-5"><small> 2022 © FIFA WorldCup</small> </p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
