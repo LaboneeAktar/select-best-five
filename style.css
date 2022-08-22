@@ -2,7 +2,8 @@ h1 {
     font-family: 'Berkshire Swash', cursive;
 }
 
-p {
+p,
+h4 {
     font-family: 'Bree Serif', serif;
 }
 
@@ -11,11 +12,11 @@ p {
 }
 
 .banner-title {
-    font-size: 50px;
+    font-size: 48px;
     color: crimson;
 }
 
-/* .banner-image-ball {
-    margin-right: -39px;
-    margin-top: 260px;
-} */
+.select {
+    padding-left: 80px;
+    padding-right: 80px;
+}
