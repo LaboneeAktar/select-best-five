@@ -31,6 +31,9 @@ function calculatePlayerExpenses() {
     if (isNaN(perPlayerAmount)) {
         alert('Please Insert a Number');
     }
+    else if (perPlayerAmount < 0) {
+        alert('Please Enter a Positive Number');
+    }
     else {
         const playerExpenses = perPlayerAmount * selectedNumber;
         setElementValue('player-expenses', playerExpenses);
@@ -55,6 +58,9 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     //Error Handling
     if (isNaN(managerAmount) || isNaN(coachAmount)) {
         alert('Please Insert a Number');
+    }
+    else if (managerAmount < 0 || coachAmount < 0) {
+        alert('Please Enter a Positive Number');
     }
     else {
         const calculateTotal = getTextElementValueById('calculate-total');
